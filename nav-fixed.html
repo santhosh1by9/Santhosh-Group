@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Santhosh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript"src="ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="aos/aos.css"rel="stylesheet"/>
+<style type="text/css">
+body{margin:0;}
+.first{height:100px;}
+.second{height:100px;background:#000;width:100%;}
+</style>
+</head>
+<body>
+	<div class="first"></div>
+	<div class="second"></div>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+</body>
+<script type="text/javascript">
+$(window).on("scroll",function()
+	{
+		if($(window).scrollTop()>100)
+		{
+			$(".first")[0].style.height="200px";
+			$(".second")[0].style.position="fixed";
+			$(".second")[0].style.top="0px";
+		}
+		else
+		{
+			$(".first")[0].style.height="100px";
+			$(".second")[0].style.position="relative";
+			$(".second")[0].style.top="0px";
+		}
+	});
+</script>
+</html>
